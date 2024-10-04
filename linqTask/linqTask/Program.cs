@@ -188,7 +188,7 @@ class Program
 
         var largestPerimeter = shapes.Max(shape => shape.GetPerimeter());
 
-        Console.WriteLine("Largest Area: " + largestPerimeter);
+        Console.WriteLine("Largest Perimeter: " + largestPerimeter);
 
     }
 
@@ -240,7 +240,7 @@ class Program
 
         var randomShapes = shapes.OrderBy(shape => rand.Next()).ToList();
 
-        Console.WriteLine(randomShapes.First().Name);
+        Console.WriteLine("Random shape:    "+randomShapes.First().Name);
 
     }
 
