@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("linqTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b8c24fb856561b8dff88ddcf162c930b58232ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88eba34136b6938071f90982a6c956d21f9fc584")]
 [assembly: System.Reflection.AssemblyProductAttribute("linqTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("linqTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

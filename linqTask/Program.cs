@@ -234,10 +234,8 @@ class Program
     {
 
         var rand = new Random();
-
         var randomShapes = shapes.OrderBy(shape => rand.Next()).ToList();
-
-        Console.WriteLine("Random shape:    "+randomShapes.First().Name);
+        Console.WriteLine(randomShapes.First().Name);
 
     }
 
@@ -246,7 +244,9 @@ class Program
     static void Difference(List<Shape> shapes)
 
     {
-
+        var largestArea = shapes.Max(shape => shape.GetArea());
+        var smallestArea = shapes.Min(shape => shape.GetArea());
+        Console.WriteLine("the difference is:   " + (largestArea-smallestArea));
     }
 
     //Output all of the shapes sorted by area, use .ForEach() to output the name and area:
@@ -254,7 +254,9 @@ class Program
     static void SortedShapes(List<Shape> shapes)
 
     {
-
+        Console.WriteLine("in order of area:\n");
+        shapes.OrderByDescending(shape => shape.GetArea()).ToList()
+            .ForEach(shape => Console.Write(shape.Name +":  "+ shape.GetArea()+"\n"));
     }
 
     static void Main(string[] args)
@@ -271,7 +273,7 @@ class Program
 
         shapes.Add(new Rectangle("Rigid Rectangle", 5, 10));
 
-        shapes.Add(new Triangle("Pointy Triangle", 5, 10, 15));
+        shapes.Add(new Triangle("Pointy Triangle", 5, 10, 12));
 
         shapes.Add(new Pentagon("Almost-round Pentagon", 5));
 
