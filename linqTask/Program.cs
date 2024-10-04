@@ -209,12 +209,9 @@ class Program
     static void AreaGreaterThan50(List<Shape> shapes)
 
     {
-
-        Console.WriteLine("Shapes with an area greater than 50: ");
-
         shapes.Where(shape => shape.GetArea() > 50).ToList()
 
-            .ForEach(shape => Console.Write(shape.Name));
+            .ForEach(shape => Console.Write(shape.Name+"has a bigger area than 50\n"));
 
     }
 
@@ -288,8 +285,6 @@ class Program
 
         Console.ReadKey();
 
-        Console.WriteLine(shapes);
-
         Console.WriteLine();
 
         //Call the methods
@@ -307,16 +302,6 @@ class Program
         Difference(shapes);
 
         SortedShapes(shapes);
-
-
-
-        foreach (var shape in shapes)
-
-        {
-
-            Console.WriteLine(shape.Name);
-
-        }
 
     }
 
