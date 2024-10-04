@@ -54,3 +54,6 @@ dkms.conf
 /linqTask/linqTask/obj/Debug/net8.0
 /linqTask/linqTask/.vs/linqTask/FileContentIndex
 /linqTask/linqTask/bin/Debug/net8.0
+/linqTask/.vs/linqTask/FileContentIndex
+/linqTask/.vs/linqTask/v17
+/.gitignore
